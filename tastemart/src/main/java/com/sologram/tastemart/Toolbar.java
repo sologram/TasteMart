@@ -1,13 +1,13 @@
 package com.sologram.tastemart;
 
+/**
+ * Created by hans on 16/12/13.
+ */
+
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
-
-/**
- * Created by hans on 16/12/13.
- */
 
 public class Toolbar extends LinearLayout implements View.OnClickListener {
 	private Frame frame;
@@ -20,6 +20,7 @@ public class Toolbar extends LinearLayout implements View.OnClickListener {
 	public void init() {
 		setListener(R.id.cmd_home);
 		setListener(R.id.cmd_mine);
+		setListener(R.id.cmd_search);
 	}
 
 	@Override

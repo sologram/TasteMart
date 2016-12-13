@@ -32,7 +32,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginRight="16dp"
-            android:src="@mipmap/icon_alipay_pay"/>
+            android:src="@mipmap/icon_home_user_center"/>
 
         <ImageView
             android:id="@+id/cmd_search"
