@@ -2,34 +2,32 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frame"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.sologram.tastemart.Frame">
 
     <fragment
         android:id="@+id/pager"
-        android:name="com.sologram.tastemart.Home"
+        android:name="com.sologram.tastemart.fragment.Home"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:elevation="24dp"
         android:layout_height="wrap_content"
+        android:elevation="24dp"
         android:padding="16dp">
 
         <ImageView
-            android:src="@mipmap/icon_black_search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <ImageView
-            android:src="@mipmap/icon_black_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"/>
+            android:src="@mipmap/icon_alipay_pay"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/icon_black_search"/>
 
     </LinearLayout>
-
 </RelativeLayout>
