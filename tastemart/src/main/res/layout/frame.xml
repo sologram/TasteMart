@@ -16,19 +16,26 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:elevation="24dp"
-        android:padding="16dp"
-        android:layout_marginTop="24dp">
+        android:padding="16dp">
 
         <ImageView
             android:id="@+id/cmd_home"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@mipmap/icon_alipay_pay"
-            android:layout_marginRight="16dp"/>
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/icon_alipay_pay"/>
 
         <ImageView
             android:id="@+id/cmd_mine"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/icon_alipay_pay"/>
+
+        <ImageView
+            android:id="@+id/cmd_search"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@mipmap/icon_black_search"/>
