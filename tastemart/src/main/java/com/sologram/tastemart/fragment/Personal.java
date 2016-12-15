@@ -1,9 +1,5 @@
 package com.sologram.tastemart.fragment;
 
-/**
- * Created by hans on 16/12/13.
- */
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;

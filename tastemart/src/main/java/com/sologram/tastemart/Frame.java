@@ -9,7 +9,7 @@ import android.view.View;
 
 import com.sologram.tastemart.fragment.*;
 
-public class Frame extends Activity implements Listener, View.OnClickListener {
+public class Frame extends Activity implements View.OnClickListener {
 	private static final String TAG = Frame.class.getSimpleName();
 
 	private boolean flag;
@@ -23,11 +23,10 @@ public class Frame extends Activity implements Listener, View.OnClickListener {
 
 	@Override
 	public void onClick(View view) {
-		onPageSelected(0, 0);
+		setPage(0, 0);
 	}
 
-	@Override
-	public void onPageSelected(int page, int param) {
+	public void setPage(int page, int param) {
 		Fragment fr = flag ? new Home() : new Personal();
 		flag = !flag;
 
@@ -36,8 +35,4 @@ public class Frame extends Activity implements Listener, View.OnClickListener {
 		fragmentTransaction.replace(R.id.pager, fr);
 		fragmentTransaction.commit();
 	}
-}
-
-interface Listener {
-	void onPageSelected(int page, int param);
 }
